@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        CP (Chest Pain Type): <input type="number" name="cp" required><br>
+        Thalach (Max Heart Rate): <input type="number" name="thalach" required><br>
+        CA (Vessels Colored): <input type="number" name="ca" required><br>
+        Age: <input type="number" name="age" required><br>
+        Sex (0=Female, 1=Male): <input type="number" name="sex" required><br>
+        Trestbps (Resting Blood Pressure): <input type="number" name="trestbps" required><br>
+        Chol (Cholesterol): <input type="number" name="chol" required><br>
+        FBS (Fasting Blood Sugar > 120): <input type="number" name="fbs" required><br>
+        Restecg (Resting ECG): <input type="number" name="restecg" required><br>
+        Slope (ST Slope): <input type="number" name="slope" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
